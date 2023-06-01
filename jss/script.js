@@ -3,6 +3,9 @@
 // in the html.
 var timeblocks = $('#timeblocks');
 
+var today = dayjs();
+$('#currentDay').text(today.format('MMM D, YYYY'));
+
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
@@ -12,13 +15,16 @@ $(function () {
   // useful when saving the description in local storage?
   //
   timeblocks.on('click', function () {
+    // The background will be Grey
     if (isPast) {
       $('body').css({ 'background-color': '#ff6961', color: '#d3d3d3' });
-      // isDark = !isDark;
+
+      // isDark = !isDark;// The background will be Red
     } else if (isPresent){
       $('body').css({ 'background-color': '#ff6961', color: '#white' });
-      
-    } else (isPast) {
+
+      // The background will be Green
+    } else (isFuture) {
       $('body').css({ 'background-color': '#d3d3d3', color: '#white'});
 
 
