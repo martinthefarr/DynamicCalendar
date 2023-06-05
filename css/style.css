@@ -63,3 +63,7 @@ textarea {
   font-weight: 600;
 }
 
+#timeblocks {
+  margin: 20px;
+  padding: 20px;
+}
