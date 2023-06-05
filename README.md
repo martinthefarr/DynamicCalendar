@@ -24,6 +24,6 @@ WHEN I refresh the page
 THEN the saved events persist
 
 ## Visuals
-
+![Webpage](./images/calendar.png)
 ## Link
 https://martinthefarr.github.io/DynamicCalendar/
